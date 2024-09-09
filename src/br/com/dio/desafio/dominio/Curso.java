@@ -5,7 +5,7 @@ public class Curso extends Conteudo{
     private int cargaHoraria;
 
     @Override
-    public double calcularXp() {
+    public double calcularXP() {
         return XP_PADRAO * cargaHoraria;
     }
 
@@ -23,10 +23,9 @@ public class Curso extends Conteudo{
 
     @Override
     public String toString() {
-        return "Curso{" +
-                "titulo='" + getTitulo() + '\'' +
-                ", descricao='" + getDescricao() + '\'' +
-                ", cargaHoraria=" + cargaHoraria +
-                '}';
+        return "\n|Curso|" +
+				"\n titulo = " + getTitulo() +
+				"\n descricao = " + getDescricao() +
+				"\n carga horaria = " + cargaHoraria + "H";
     }
 }
